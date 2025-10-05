@@ -1,0 +1,36 @@
+//Command to Open the Mail Server
+PS C:\windows\System32> python -m aiosmtpd -n -l 127.0.0.1:1025
+
+
+
+//Terminal Output
+python .\SMTP_Lab.py
+220 NatTop Python SMTP 1.4.6
+
+250 NatTop
+
+250 OK
+
+250 OK
+
+354 End data with <CR><LF>.<CR><LF>
+
+250 OK
+
+221 Bye
+
+
+
+
+
+//Mail Server Output:
+---------- MESSAGE FOLLOWS ----------
+From: Nathan <natchuop@gmail.com>
+To: School Email <nathan.chuop@sjsu.edu>
+Subject: SMTP Lab Test Message
+X-Peer: ('127.0.0.1', 58781)
+
+
+ I love computer networks!
+
+------------ END MESSAGE ------------
